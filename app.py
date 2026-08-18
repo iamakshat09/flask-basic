@@ -8,7 +8,7 @@ def get_db_connection():
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="root123",
+        password="PASSWORDOFMYSQL",  #password
         database="studentdb"
     )
 
@@ -16,7 +16,7 @@ def get_db_connection():
 
 @app.route("/", methods=["GET"])
 def default():
-    data="<h1>Welcome to the Flask</h1>"
+    data="<h1 style='text-align: center'>Welcome to the Flask</h1>"
     return data
 
 # Get all students
